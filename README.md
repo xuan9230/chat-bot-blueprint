@@ -25,5 +25,6 @@ The app will then be functioning and ready to deploy.
 
 ## Architecture
 
-<img width="719" alt="image" src="https://github.com/user-attachments/assets/64a24c4d-0c79-454c-b13d-243844f991c9">
+<img width="883" alt="image" src="https://github.com/user-attachments/assets/674185c3-3fe1-44da-96d1-855f416405c6" />
+
 
