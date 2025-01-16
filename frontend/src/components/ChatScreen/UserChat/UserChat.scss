@@ -1,0 +1,22 @@
+@import "../../../styles/globalStyles.scss";
+
+.user-chat {
+  margin: 2rem 0 2rem 3.5rem;
+
+  .text-wrapper {
+    align-items: center;
+    background-color: $user-text-color;
+    border-radius: 25px 0px 25px 25px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 12px 25px;
+    position: relative;
+  }
+
+  .text {
+    color: $user-background-color;
+    margin: 0;
+    min-width: 150px;
+  }
+}

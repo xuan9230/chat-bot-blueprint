@@ -1,0 +1,44 @@
+@import "../../../styles/globalStyles.scss";
+
+.product-recommendation {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+}
+
+.advisor-chat {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+
+  .content-wrapper {
+    align-items: flex-start;
+    background: $main-background-color;
+    border-radius: 25px 25px 25px 0px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px 25px;
+  }
+
+  .content {
+    width: 255px;
+    color: $main-text-color;
+    margin: 0;
+    white-space: pre-line;
+  }
+
+  .product-image {
+    width: 100%;
+    max-height: 300px;
+  }
+}
+
+.advisor-icon {
+  height: 44px !important;
+  width: 44px !important;
+  margin-top: 10px;
+}

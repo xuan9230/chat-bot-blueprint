@@ -1,0 +1,39 @@
+services:
+
+  application:
+    container_name: application
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    restart: unless-stopped
+    environment:
+      - REACT_APP_API_BASE_URL=${REACT_APP_API_BASE_URL}
+
+  backend:
+    container_name: backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - 3001:3001
+    restart: unless-stopped
+    environment:
+      - ENV_PORT=${ENV_PORT}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_API_ENDPOINT=${OPENAI_API_ENDPOINT}
+    # depends_on:
+    #   - postgres
+    # links:
+    #   - postgres
+  # postgres:
+  #   container_name: postgres
+  #   image: "postgres:alpine"
+  #   environment:
+  #     - POSTGRES_PASSWORD=${DB_PASSWORD}
+  #     - POSTGRES_USER=${DB_USER}
+  #     - POSTGRES_DB=${DB_NAME}
+  #     - POSTGRES_CONTAINER_HOST=${DB_HOST}
+  #   ports:
+  #     - ${DB_PORT}:${DB_PORT}

@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./globalColors.scss";
+@import "./globalFonts.scss";
+@import "bootstrap/dist/css/bootstrap.css";
+
+p {
+  margin-bottom: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans";
+  height: 100%;
+}
+
+#root {
+  height: 100vh;
+  overflow: hidden;
+}
+
+:root {
+  --body-12-medium-font-family: "DMSans-Medium", Helvetica;
+  --body-12-medium-font-size: 12px;
+  --body-12-medium-font-style: normal;
+  --body-12-medium-font-weight: 500;
+  --body-12-medium-letter-spacing: 0px;
+  --body-12-medium-line-height: normal;
+  --body-14-medium-font-family: "DMSans-Medium", Helvetica;
+  --body-14-medium-font-size: 14px;
+  --body-14-medium-font-style: normal;
+  --body-14-medium-font-weight: 500;
+  --body-14-medium-letter-spacing: 0px;
+  --body-14-medium-line-height: normal;
+  --body-16-medium-font-family: "DMSans-Medium", Helvetica;
+  --body-16-medium-font-size: 16px;
+  --body-16-medium-font-style: normal;
+  --body-16-medium-font-weight: 500;
+  --body-16-medium-letter-spacing: 0px;
+  --body-16-medium-line-height: normal;
+  --lightfontdark: rgba(6, 22, 28, 1);
+  --lightfontgrey: rgba(151, 152, 153, 1);
+  --neutralneutral-80: rgba(51, 51, 51, 1);
+  --text-colordefault: rgba(51, 51, 51, 1);
+  --text-colorsubtle: rgba(117, 117, 117, 1);
+  --variable-collection-25: rgba(3, 172, 14, 0.25);
+  --variable-collection-50: rgba(3, 172, 14, 0.5);
+  --variable-collection-toko-green: rgba(3, 172, 14, 1);
+}
+
+@keyframes message {
+  0% {
+    padding-top: 20px;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    padding-top: 0px;
+  }
+}
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.chat {
+  animation-name: message;
+  animation-duration: 0.2s;
+
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.015em;
+  text-align: left;
+}

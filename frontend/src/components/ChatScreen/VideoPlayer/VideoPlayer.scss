@@ -1,0 +1,20 @@
+@import "../../../styles/globalStyles.scss";
+
+.video-container {
+  margin-top: 20px;
+  .content-wrapper {
+    background: $secondary-background-color;
+    border-radius: 25px 25px 25px 0px;
+    padding: 12px 25px;
+    width: 100%;
+  }
+
+  .content {
+    width: 300px;
+    color: $secondary-text-color;
+  }
+
+  .video {
+    width: 100%;
+  }
+}

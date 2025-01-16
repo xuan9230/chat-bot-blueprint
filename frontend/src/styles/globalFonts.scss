@@ -1,0 +1,24 @@
+@mixin header-font {
+  font-family: "DM Sans";
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.header-text {
+  &-large {
+    @include header-font;
+    font-size: 16px;
+  }
+
+  &-medium {
+    @include header-font;
+    font-size: 14px;
+  }
+
+  &-small {
+    @include header-font;
+    font-size: 12px;
+  }
+}

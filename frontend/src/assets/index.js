@@ -1,0 +1,5 @@
+export { default as galleryIcon } from "./galleryIcon.svg"
+export { default as cameraEllipses } from "./cameraEllipses.svg"
+export { default as backButtonIcon } from "./backButtonIcon.svg"
+export { default as minusButtonIcon } from "./minusButtonIcon.svg"
+export { default as nextIcon } from "./nextIcon.svg"
